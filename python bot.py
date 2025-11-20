@@ -23,7 +23,7 @@ import os import asyncio import logging from aiogram import Bot, Dispatcher, typ
 
 load config
 
-load_dotenv() TELEGRAM_BOT_TOKEN = os.getenv('8333558740:AAHoXqa8V0E-NAbYxbYU4y15yrBTQzr4QHc') OPENAI_API_KEY = os.getenv('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') ADMIN_IDS = [int(x.strip()) for x in os.getenv('t.me/AfMdshakil','').split(',') if x.strip().isdigit()] REF_BONUS = float(os.getenv('REF_BONUS','10')) CURRENCY = os.getenv('CURRENCY','BDT')
+load_dotenv() TELEGRAM_BOT_TOKEN = os.getenv('8333558740:AAHoXqa8V0E-NAbYxbYU4y15yrBTQzr4QHc') OPENAI_API_KEY = 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 ADMIN_IDS = [int(x.strip()) for x in os.getenv('t.me/AfMdshakil','').split(',') if x.strip().isdigit()] REF_BONUS = float(os.getenv('REF_BONUS','10')) CURRENCY = os.getenv('CURRENCY','BDT')
 
 if not TELEGRAM_BOT_TOKEN or not OPENAI_API_KEY: raise Exception("Please set TELEGRAM_BOT_TOKEN and OPENAI_API_KEY in .env")
 
